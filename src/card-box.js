@@ -5,7 +5,8 @@ class CardBox extends LitElement {
 
     static get styles() {
         return [estilosCompartidos, css`
-        div {
+        :host {
+            display: block;
             border: 1px solid #ddd;
         }
         `];
@@ -13,7 +14,7 @@ class CardBox extends LitElement {
 
     render() {
         return html`
-        <div><slot></slot></div>
+        <slot></slot>
         `;
     }
 }
