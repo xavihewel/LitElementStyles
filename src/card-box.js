@@ -8,6 +8,16 @@ class CardBox extends LitElement {
         :host {
             display: block;
             border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        :host([hidden]) {
+            display: none;
+        }
+        :host(.red) {
+            border-color: red;
+        }
+        :host(.red) span {
+            color: red;
         }
         `];
     }
@@ -15,6 +25,7 @@ class CardBox extends LitElement {
     render() {
         return html`
         <slot></slot>
+        <span>cerrar</span>
         `;
     }
 }
