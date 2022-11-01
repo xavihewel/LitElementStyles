@@ -5,19 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
+        }
+        a {
+            color: orange;
+        }
+        span {
+            color: blueviolet;
+        }
+        card-box {
+            background-color: #f0f0f0;
+            margin-bottom: 15px;
+            --card-box-title-color: #6fc;
+        }
+
+        .segunda {
+            --card-box-title-background-color: red;
+        }
+    </style>
 </head>
 <body>
     <h1>Classe 3 - Styles</h1>
 
-    <card-box>
+    <span>blablabla</span>
+
+    <card-box title="prova!!!">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reprehenderit ipsam porro delectus placeat, natus voluptatibus aliquam pariatur labore, et itaque earum iure vero odit eum atque perspiciatis unde animi?</p>
         <p>Iste similique quam architecto perferendis vitae maxime laudantium minima officia. Optio quas eos ipsa dolorem fugit eius nulla quibusdam facere ullam iure itaque nostrum esse dicta mollitia molestias, quia eum!</p>
-        <p>Perferendis quibusdam similique labore quas, tenetur iste, illo laboriosam fuga perspiciatis maiores temporibus molestias magni fugit vel qui natus voluptas accusamus veniam magnam nam rerum dolorum. Distinctio dolor quas laboriosam.</p>
+        <p>Perferendis quibusdam similique labore quas, tenetur iste, illo laboriosam fuga perspiciatis maiores temporibus molestias magni fugit vel qui natus voluptas accusamus veniam magnam nam rerum dolorum. Distinctio dolor quas laboriosam.
+            <a href="#">dos</a>
+        </p>
+        <a href="#">uno</a>
     </card-box>
     <card-box hidden>
         Hola
     </card-box>
     <card-box class="red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur odit consequatur, magni repudiandae dolorem ipsa ut tempore tempora cumque facere nostrum, corporis doloremque iusto laborum atque dicta? Nemo, amet?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto suscipit sequi praesentium facere natus quos eos molestiae nihil odit? Ut consequuntur expedita necessitatibus distinctio hic magni facere voluptate aperiam a?</p>
+        </div>
+        hola!!
+    </card-box>
+
+    <card-box class="segunda" title="el meu títol">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur odit consequatur, magni repudiandae dolorem ipsa ut tempore tempora cumque facere nostrum, corporis doloremque iusto laborum atque dicta? Nemo, amet?</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto suscipit sequi praesentium facere natus quos eos molestiae nihil odit? Ut consequuntur expedita necessitatibus distinctio hic magni facere voluptate aperiam a?</p>
+        </div>
         hola!!
     </card-box>
 

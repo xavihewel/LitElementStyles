@@ -3,6 +3,12 @@ import { estilosCompartidos } from './estilos-compartidos';
 
 class CardBox extends LitElement {
 
+    static get properties() {
+        return {
+            title: {type: String}
+        };
+    }
+
     static get styles() {
         return [estilosCompartidos, css`
         :host {
@@ -19,13 +25,28 @@ class CardBox extends LitElement {
         :host(.red) span {
             color: red;
         }
+        ::slotted(a) {
+            background-color: red;
+        }
+        ::slotted(p) {
+            color: blue;
+        }
+        h1 {
+            font-size: 1.2;
+            font-weight: 300;
+            margin-top: 0;
+            color: var(--card-box-title-color, #888);
+            background-color: var(--card-box-title-background-color, transparent)
+        }
         `];
     }
 
     render() {
         return html`
+        ${this.title 
+            ? html`<h1>${this.title}</h1>`
+            : ''}
         <slot></slot>
-        <span>cerrar</span>
         `;
     }
 }
